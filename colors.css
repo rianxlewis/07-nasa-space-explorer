@@ -1,0 +1,229 @@
+/* NASA Web Design System Color Palette */
+/* A flexible, yet distinctly NASA palette designed to communicate warmth and trustworthiness */
+/* while meeting the highest standards of 508 color contrast requirements */
+
+:root {
+  /* === PRIMARY COLORS === */
+  /* Blue is commonly associated with trust, confidence, and sincerity */
+  --color-primary: #105bd8;
+  --color-primary-darker: #0b3d91;
+  --color-primary-darkest: #061f4a;
+  --color-base: #212121;
+  --color-white: #ffffff;
+
+  /* === PRIMARY ALTERNATIVE COLORS === */
+  --color-primary-alt: #02bfe7;
+  --color-primary-alt-dark: #00a6d2;
+  --color-primary-alt-darkest: #046b99;
+  --color-primary-alt-light: #9bdaf1;
+  --color-primary-alt-lightest: #e1f3f8;
+
+  /* === SECONDARY COLORS === */
+  /* Accent colors for modern flair - use sparingly for highlights */
+  --color-secondary: #dd361c;
+  --color-secondary-dark: #c62d1f;
+  --color-secondary-darkest: #99231b;
+  --color-secondary-light: #e59892;
+  --color-secondary-lightest: #f9e0de;
+
+  /* === GRAY COLORS === */
+  --color-gray: #5b616b;
+  --color-gray-dark: #323a45;
+  --color-gray-light: #aeb0b5;
+  --color-gray-lighter: #d6d7d9;
+  --color-gray-lightest: #f1f1f1;
+  --color-gray-warm-light: #e4e2e0;
+  --color-gray-warm-dark: #494440;
+  --color-gray-cool-light: #dce4ef;
+
+  /* === TERTIARY COLORS === */
+  /* Used primarily for content-specific needs, alerts, and illustrations */
+  
+  /* Gold Colors */
+  --color-gold: #ff9d1e;
+  --color-gold-light: #f9aa43;
+  --color-gold-lighter: #ffc375;
+  --color-gold-lightest: #ffebd1;
+
+  /* Green Colors */
+  --color-green: #2e8540;
+  --color-green-light: #4aa564;
+  --color-green-lighter: #94bfa2;
+  --color-green-lightest: #e7f4e4;
+
+  /* Cool Blue Colors */
+  --color-cool-blue: #205493;
+  --color-cool-blue-light: #4773aa;
+  --color-cool-blue-lighter: #8ba6ca;
+  --color-cool-blue-lightest: #dce4ef;
+
+  /* === SPECIAL STATE COLORS === */
+  --color-focus: #aeb0b5;
+  --color-visited: #4c2c92;
+}
+
+/* === UTILITY CLASSES === */
+/* Generate utility classes for easy color application */
+
+/* Text Colors */
+.text-primary { color: var(--color-primary); }
+.text-primary-darker { color: var(--color-primary-darker); }
+.text-primary-darkest { color: var(--color-primary-darkest); }
+.text-base { color: var(--color-base); }
+.text-white { color: var(--color-white); }
+
+.text-primary-alt { color: var(--color-primary-alt); }
+.text-primary-alt-dark { color: var(--color-primary-alt-dark); }
+.text-primary-alt-darkest { color: var(--color-primary-alt-darkest); }
+.text-primary-alt-light { color: var(--color-primary-alt-light); }
+.text-primary-alt-lightest { color: var(--color-primary-alt-lightest); }
+
+.text-secondary { color: var(--color-secondary); }
+.text-secondary-dark { color: var(--color-secondary-dark); }
+.text-secondary-darkest { color: var(--color-secondary-darkest); }
+.text-secondary-light { color: var(--color-secondary-light); }
+.text-secondary-lightest { color: var(--color-secondary-lightest); }
+
+.text-gray { color: var(--color-gray); }
+.text-gray-dark { color: var(--color-gray-dark); }
+.text-gray-light { color: var(--color-gray-light); }
+.text-gray-lighter { color: var(--color-gray-lighter); }
+.text-gray-lightest { color: var(--color-gray-lightest); }
+.text-gray-warm-light { color: var(--color-gray-warm-light); }
+.text-gray-warm-dark { color: var(--color-gray-warm-dark); }
+.text-gray-cool-light { color: var(--color-gray-cool-light); }
+
+.text-gold { color: var(--color-gold); }
+.text-gold-light { color: var(--color-gold-light); }
+.text-gold-lighter { color: var(--color-gold-lighter); }
+.text-gold-lightest { color: var(--color-gold-lightest); }
+
+.text-green { color: var(--color-green); }
+.text-green-light { color: var(--color-green-light); }
+.text-green-lighter { color: var(--color-green-lighter); }
+.text-green-lightest { color: var(--color-green-lightest); }
+
+.text-cool-blue { color: var(--color-cool-blue); }
+.text-cool-blue-light { color: var(--color-cool-blue-light); }
+.text-cool-blue-lighter { color: var(--color-cool-blue-lighter); }
+.text-cool-blue-lightest { color: var(--color-cool-blue-lightest); }
+
+.text-focus { color: var(--color-focus); }
+.text-visited { color: var(--color-visited); }
+
+/* Background Colors */
+.bg-primary { background-color: var(--color-primary); }
+.bg-primary-darker { background-color: var(--color-primary-darker); }
+.bg-primary-darkest { background-color: var(--color-primary-darkest); }
+.bg-base { background-color: var(--color-base); }
+.bg-white { background-color: var(--color-white); }
+
+.bg-primary-alt { background-color: var(--color-primary-alt); }
+.bg-primary-alt-dark { background-color: var(--color-primary-alt-dark); }
+.bg-primary-alt-darkest { background-color: var(--color-primary-alt-darkest); }
+.bg-primary-alt-light { background-color: var(--color-primary-alt-light); }
+.bg-primary-alt-lightest { background-color: var(--color-primary-alt-lightest); }
+
+.bg-secondary { background-color: var(--color-secondary); }
+.bg-secondary-dark { background-color: var(--color-secondary-dark); }
+.bg-secondary-darkest { background-color: var(--color-secondary-darkest); }
+.bg-secondary-light { background-color: var(--color-secondary-light); }
+.bg-secondary-lightest { background-color: var(--color-secondary-lightest); }
+
+.bg-gray { background-color: var(--color-gray); }
+.bg-gray-dark { background-color: var(--color-gray-dark); }
+.bg-gray-light { background-color: var(--color-gray-light); }
+.bg-gray-lighter { background-color: var(--color-gray-lighter); }
+.bg-gray-lightest { background-color: var(--color-gray-lightest); }
+.bg-gray-warm-light { background-color: var(--color-gray-warm-light); }
+.bg-gray-warm-dark { background-color: var(--color-gray-warm-dark); }
+.bg-gray-cool-light { background-color: var(--color-gray-cool-light); }
+
+.bg-gold { background-color: var(--color-gold); }
+.bg-gold-light { background-color: var(--color-gold-light); }
+.bg-gold-lighter { background-color: var(--color-gold-lighter); }
+.bg-gold-lightest { background-color: var(--color-gold-lightest); }
+
+.bg-green { background-color: var(--color-green); }
+.bg-green-light { background-color: var(--color-green-light); }
+.bg-green-lighter { background-color: var(--color-green-lighter); }
+.bg-green-lightest { background-color: var(--color-green-lightest); }
+
+.bg-cool-blue { background-color: var(--color-cool-blue); }
+.bg-cool-blue-light { background-color: var(--color-cool-blue-light); }
+.bg-cool-blue-lighter { background-color: var(--color-cool-blue-lighter); }
+.bg-cool-blue-lightest { background-color: var(--color-cool-blue-lightest); }
+
+.bg-focus { background-color: var(--color-focus); }
+.bg-visited { background-color: var(--color-visited); }
+
+/* Border Colors */
+.border-primary { border-color: var(--color-primary); }
+.border-primary-darker { border-color: var(--color-primary-darker); }
+.border-primary-darkest { border-color: var(--color-primary-darkest); }
+.border-base { border-color: var(--color-base); }
+.border-white { border-color: var(--color-white); }
+
+.border-secondary { border-color: var(--color-secondary); }
+.border-secondary-dark { border-color: var(--color-secondary-dark); }
+.border-secondary-darkest { border-color: var(--color-secondary-darkest); }
+
+.border-gray { border-color: var(--color-gray); }
+.border-gray-light { border-color: var(--color-gray-light); }
+.border-gray-lighter { border-color: var(--color-gray-lighter); }
+
+.border-focus { border-color: var(--color-focus); }
+
+/* === ACCESSIBILITY NOTES === */
+/*
+WCAG Compliant Color Combinations (4.5:1 contrast ratio minimum):
+
+Colors on white background:
+- primary-darkest on white
+- primary-darker on white
+- primary on white
+- cool-blue-light on white
+- primary-alt-darkest on white
+- green on white
+- visited on white
+- base on white
+- gray-dark on white
+- gray on white
+- gray-warm-dark on white
+- secondary-darkest on white
+- secondary-dark on white
+- secondary on white
+
+White text on colored backgrounds:
+- white on base
+- white on gray-dark
+- white on gray-warm-dark
+- white on gray
+- white on primary-darkest
+- white on primary-darker
+- white on primary
+- white on cool-blue-light
+- white on primary-alt-darkest
+- white on green
+- white on secondary-darkest
+- white on secondary-dark
+- white on secondary
+
+Base (dark) text on light colored backgrounds:
+- base on primary-alt-dark
+- base on primary-alt
+- base on green-light
+- base on gold
+- base on gold-light
+- base on gray-light
+- base on gray-lighter
+- base on gray-warm-light
+- base on cool-blue-lighter
+- base on cool-blue-lightest
+- base on primary-alt-lightest
+- base on green-lighter
+- base on green-lightest
+- base on gold-lighter
+- base on gold-lightest
+- base on secondary-lightest
+*/
