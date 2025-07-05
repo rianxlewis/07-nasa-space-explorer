@@ -9,7 +9,30 @@ const gallery = document.getElementById('gallery');
 // - Restrict dates to NASA's image archive (starting from 1995)
 setupDateInputs(startInput, endInput);
 
+// Array of fun "Did You Know?" space facts
+const spaceFacts = [
+  "Did you know? A day on Venus is longer than a year on Venus!",
+  "Did you know? Neutron stars can spin at a rate of 600 rotations per second.",
+  "Did you know? There are more trees on Earth than stars in the Milky Way.",
+  "Did you know? One million Earths could fit inside the Sun.",
+  "Did you know? Space is completely silent—there’s no air for sound to travel.",
+  "Did you know? The footprints on the Moon will be there for millions of years.",
+  "Did you know? Jupiter has the shortest day of all the planets.",
+  "Did you know? Saturn could float in water because it’s mostly gas.",
+  "Did you know? The hottest planet in our solar system is Venus.",
+  "Did you know? A spoonful of a neutron star weighs about a billion tons."
+];
+
+// Pick a random fact and show it in the space fact section
+const spaceFactDiv = document.getElementById('spaceFact');
+const randomFact = spaceFacts[Math.floor(Math.random() * spaceFacts.length)];
+spaceFactDiv.textContent = randomFact;
+
 document.getElementById('getImagesBtn').addEventListener('click', () => {
+  // Pick and show a new random fact each time photos are loaded
+  const newFact = spaceFacts[Math.floor(Math.random() * spaceFacts.length)];
+  spaceFactDiv.textContent = newFact;
+
   // Show a loading message before fetching images
   gallery.innerHTML = `
     <div class="loading-message">🔄 Loading space photos…</div>
