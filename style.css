@@ -161,7 +161,7 @@ button:active {
 }
 
 .gallery-item img {
-  max-height: 250px;
+  max-height: 300px;
 }
 
 .gallery-item img,
@@ -465,4 +465,21 @@ button:active {
   #modalDate, #modalExplanation {
     font-size: 13px;
   }
+}
+
+/* Loading message style */
+.loading-message {
+  width: 100%;
+  text-align: center;
+  font-size: 1.3rem;
+  color: var(--color-primary-darker);
+  background: linear-gradient(90deg, var(--color-primary-alt-lightest) 0%, var(--color-gray-cool-light) 100%);
+  border-radius: 8px;
+  padding: 28px 0 24px 0;
+  margin: 32px 0 24px 0;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  box-shadow: 0 2px 8px rgba(16,91,216,0.07);
+  animation: fadeIn 0.5s cubic-bezier(.4,2,.6,1);
+  display: block;
 }
